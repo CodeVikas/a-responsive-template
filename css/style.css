@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:33%;
+    border:2px solid black;
+    border-radius: 50px;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width : 70%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 18px 20px;
+}
+.nav-list li a{
+    text-decoration:none ;
+    color :white;
+}
+.nav-list li a:hover{
+    text-decoration:none ;
+    color :yellow;
+}
+.rightnav{
+    /* background-color:blue */
+    width:30%;
+    padding: 0px 20px;
+    text-align: right;
+    
+    
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+.background{
+    background:rgba(0,0,0,0.7) url('../img/bg.jpg');
+    background-blend-mode : darken;
+    background-size:cover;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    height:80%;
+}
+.firstsection{
+    background:rgba(0,0,0,0.7) url('../img/bg.jpg');
+    background-blend-mode : darken;
+    background-size:cover;
+}
+.firstsection{
+    height: 100vh;
+}
+.firsthalf{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#vikas{
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 100px;
+}
+.text-big{
+    font-size: 30px;
+}
+.text-small{
+    font-size:18px;
+}
+.btn{
+    padding: 8px 12px;
+    margin: 7px 0;
+    border :2px solid white;
+    border-radius:8px;
+    font-size: 12px;
+    background: none;
+    color:white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.sectiontag{
+    padding: 16px 0px;
+}
+.section{
+    /* height: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:80%;
+    margin:auto;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.paras{
+    padding: 0px 65px;
+}
+.img-fluid{
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.contact{
+    background-color: rgb(238, 228, 219);
+    height: 70vh;
+}
+.text-center{
+    text-align: center;
+}
+.form{
+    max-width: 62%;
+   margin: auto; 
+}
+.form input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin:15px 0px;
+    padding:6px;
+    /* text-align: center; */
+}
+.btn-dark{
+    border: 1px solid black;
+    border-radius: 5px 13px;
+    padding: 3px;
+    background-color: rgb(77, 136, 224);
+    color: black;
+}
+.btn-dark:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: red;
+    color: black;
+}
+#text{
+    border-radius: 5px;
+    /* text-align: center; */
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right :5%;
+    top:15px;
+    display: none;
+
+}
+.line{
+    width:33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width:1200px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width:100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+}
